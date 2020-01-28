@@ -1,4 +1,6 @@
 <person>
+
+<person>
 <firstName>John</firstName>
 <lastName>Smith</lastName>
 <age>25</age>
@@ -15,7 +17,9 @@
 <gender>
 <type>male</type>
 </gender>
+</person>
 
+<person>
 <firstName>Jimy</firstName>
 <lastName>Liar</lastName>
 <age>19</age>
@@ -31,7 +35,9 @@
 <gender>
 <type>male</type>
 </gender>
+</person>
 
+<person>
 <firstName>Patty</firstName>
 <lastName>Liar</lastName>
 <age>20</age>
@@ -48,4 +54,6 @@
 <gender>
 <type>female</type>
 </gender>
+</person>
+
 </person>
