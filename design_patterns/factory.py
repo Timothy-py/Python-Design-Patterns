@@ -3,6 +3,7 @@ import xml.etree.ElementTree as etree
 
 
 class JSONDataExtractor:
+    """a class which handles the extraction of files in json format"""
     def __init__(self, filepath):
         with open(filepath, mode='r', encoding='utf-8') as f:
             self.data = json.load(f)
@@ -13,6 +14,7 @@ class JSONDataExtractor:
 
 
 class XMLDataExtractor:
+    """a class which handles the extraction of files in xml format"""
     def __init__(self, filepath):
         self.tree = etree.parse(filepath)
 
@@ -22,6 +24,9 @@ class XMLDataExtractor:
 
 
 def dataextraction_factory(filepath):
+    """
+    a method which determines the type of data format and handles the corresponding object creation task
+    """
     if filepath.endswith('json'):
         extractor = JSONDataExtractor
     elif filepath.endswith('xml'):
@@ -33,6 +38,7 @@ def dataextraction_factory(filepath):
 
 
 def extract_data_from(filepath):
+    """this method handle exception"""
     factory_obj = None
     try:
         factory_obj = dataextraction_factory(filepath)
@@ -43,6 +49,7 @@ def extract_data_from(filepath):
 
 
 def main():
+    """this method demonstrates how the factory design pattern can be used. """
     sqlite_factory = extract_data_from('data/person.sq3')
     print()
 
