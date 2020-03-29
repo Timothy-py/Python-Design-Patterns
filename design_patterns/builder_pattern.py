@@ -55,6 +55,7 @@ class Computer:
         return '\n'.join(info)
 
 
+# Builder
 class ComputerBuilder:
     def __init__(self):
         self.computer = Computer('AG23385193')
@@ -69,6 +70,7 @@ class ComputerBuilder:
         self.computer.gpu = amount
 
 
+# Director
 class HardwareEngineer:
     def __init__(self):
         self.builder = None
