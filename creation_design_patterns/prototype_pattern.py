@@ -14,7 +14,7 @@ class Website:
             setattr(self, key, kwargs[key])
 
     def __str__(self):
-        summary = [f'Website "{self.name}"\n',]
+        summary = [f'Website "{self.name}"\n']
         infos = vars(self).items()
         ordered_infos = sorted(infos)
         for attr, val in ordered_infos:
