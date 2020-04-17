@@ -1,4 +1,4 @@
-## FACTORY DESIGN PATTEN  
+## FACTORY DESIGN PATTERN  
 ### Definition :
 Define an interface for creating an object, but defer object instantiation to run time.
 The factory method is based on a single function written to handle our object 
